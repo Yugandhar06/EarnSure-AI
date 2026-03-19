@@ -14,15 +14,12 @@ ShiftSafe fixes this.
 What We Built
 
 A fully automated parametric income protection platform for food delivery riders (Zomato/Swiggy), built specifically for Indian gig work conditions.
-
-Not traditional insurance. A guaranteed income floor backed by AI.
-
-When the world disrupts a rider's ability to earn — rain, extreme heat, bad air, platform crash — ShiftSafe detects it automatically, verifies the rider genuinely tried to work, and tops up their income to their personal earning baseline.
-
-Zero claim forms. Zero waiting. Money arrives in under 90 seconds.
+->Not traditional insurance. A guaranteed income floor backed by AI.
+->When the world disrupts a rider's ability to earn — rain, extreme heat, bad air, platform crash — ShiftSafe detects it automatically, verifies the rider genuinely tried to work, and tops up their income to their personal earning baseline.
+->Zero claim forms. Zero waiting. Money arrives in under 90 seconds.
 
 Field	                    Detail
-Worker type	   :  Food delivery riders — Zomato & Swiggy
+Worker type	       :  Food delivery riders — Zomato & Swiggy
 Cities	           :  Bengaluru, Delhi, Mumbai (metro-first MVP)
 Vehicle	           :  2-wheeler (bike/scooter)
 Daily earnings	   :  ₹600 – ₹1,500 depending on hours and zone
@@ -98,10 +95,10 @@ Dispute window        : 48 hours
 Full Tier Comparison :
 
 	           STARTER ₹29/wk | BASIC₹49/wk	| PLUS ₹89/wk | PRO ₹149/wk
-Coverage ratio	  :      40%	  |    50%	|   60%	      |    75%
-Max daily top-up  :	₹250	  |   ₹250	|  ₹250	      |    ₹250
-Max weekly top-up :	₹250	  |   ₹250	|  ₹250	      |    ₹250
-Payout speed	  :    < 6 hrs	  |  < 6 hrs	| < 6 hrs     |   < 6 hrs
+Coverage ratio	  :      40%  |    50%	    |   60%	      |    75%
+Max daily top-up  :	    ₹250  |   ₹250	    |  ₹250	      |    ₹250
+Max weekly top-up :    	₹250  |   ₹250	    |  ₹250	      |    ₹250
+Payout speed	  :    < 6 hrs|  < 6 hrs	| < 6 hrs     |   < 6 hrs
 
 Premium as % of Weekly Income
 STARTER  : ₹29 / ₹0 (new, no earnings yet)    → Fixed flat entry price
@@ -127,8 +124,8 @@ PEB = personal_model
 Top-up = PEB − actual_earnings
 
 Dynamic MPE :
-Severity	Orders Required
-Low	              3
+Severity	    Orders Required
+Low	                  3
 Medium	              2
 High	              1
 Extreme	              0
@@ -141,13 +138,14 @@ IF NOT external_signal:
 IF external + gps + demand:
 payout = FULL
 
-Fraud   Prevention
+Fraud Prevention :
+
 Layer	Mechanism
-L1	Dynamic MPE
-L2	3-Signal Validation
-L3	GPS Analysis
-L4	Device Fingerprint
-L5	Anomaly Detection
+L1	    Dynamic MPE
+L2   	3-Signal Validation
+L3  	GPS Analysis
+L4	    Device Fingerprint
+L5	    Anomaly Detection
 
 Payout Flow :
 
@@ -165,11 +163,11 @@ Time: < 90 seconds
 
 Layer	        Technology
 Frontend	React Native
-Backend	        NestJS
+Backend	    NestJS
 ML	        Python, XGBoost
 Database	PostgreSQL, Redis
 Payments	Razorpay
-Infra	        AWS, Docker
+Infra	    AWS, Docker
 
 
 
