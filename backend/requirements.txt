@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+celery
+redis
+psycopg2-binary
+sqlalchemy
+websockets
+pyjwt
+pandas
+scikit-learn
+joblib
+pydantic
+httpx
+python-dotenv
+razorpay
+passlib[bcrypt]
